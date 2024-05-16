@@ -107,11 +107,6 @@ def main():
         #pega todos os Hosts encontrados no arquivo e categoriza    
         categorizeHosts(hostsList)
         
-        #TUNNEL_REFERENCE: Ip = 127.0.0.1 -> default comentado
-        print("\n##### TUNNEL_REFERENCE #####")
-        for x in tunnelList:
-            print(x.ip+" "+x.name)
-
         #SINGLE_REFERENCE: hostname associado a um unico ip -> default descomentado
         print("\n##### SINGLE_REFERENCE #####")
         for x in singleList:
@@ -122,10 +117,10 @@ def main():
         for x in multiList:
             print(x.ip+" "+x.name)
                                         
-
-                            
-
-
+        #TUNNEL_REFERENCE: Ip = 127.0.0.1 -> default comentado
+        print("\n##### TUNNEL_REFERENCE #####")
+        for x in tunnelList:
+            print(x.ip+" "+x.name)
 
         print(f"\nFinalizando execução de {file} ")
        
